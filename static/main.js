@@ -9,7 +9,7 @@ if (!clientId) {
 
 // Establish a WebSocket connection to FastAPI backend
 // Note the "ws://" protocol instead of "http://"
-const ws = new WebSocket(`ws://127.0.0.1:8000/ws/${clientId}`);
+const ws = new WebSocket(`wss://asynced-realtime-chat-app.onrender.com/ws/${clientId}`);
 
 const form = document.getElementById('messageForm');
 const messageInput = document.getElementById('messageInput');
